@@ -21,9 +21,12 @@
         "@actions/tool-cache": "^1.6.0"
     },
     "devDependencies": {
+        "@vercel/ncc": "^0.28.0",
         "eslint": "^7.23.0"
     },
     "scripts": {
-        "lint": "eslint *.js"
+        "lint": "eslint *.js",
+        "build-main": "npx ncc build main.js -o dist/main/ --license licenses.txt",
+        "build-post": "npx ncc build post.js -o dist/post/ --license licenses.txt"
     }
 }
