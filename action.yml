@@ -1,0 +1,22 @@
+---
+name: 'Setup TestingBot Tunnel'
+description: 'Sets up the Java based TestingBot Tunnel in your test environment.'
+branding:
+  color: blue
+  icon: cloud
+
+inputs:
+  testingbot_key:
+    description: 'TestingBot access key'
+    required: true
+  testingbot_secret:
+    description: 'TestingBot access secret'
+    required: true
+  testingbot_tunnel_download_url:
+    description: 'URL to download TestingBot Tunnel from'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'main.js'
+  post: 'post.js'

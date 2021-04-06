@@ -1,0 +1,29 @@
+{
+    "name": "setup-testingbot-tunnel",
+    "version": "1.0.0",
+    "description": "Sets up the Java based TestingBot Tunnel in your test environment.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tiesjan/setup-testingbot-tunnel.git"
+    },
+    "author": "Ties Jan Hefting",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/tiesjan/setup-testingbot-tunnel/issues"
+    },
+    "homepage": "https://github.com/tiesjan/setup-testingbot-tunnel#readme",
+    "engines": {
+        "npm": "^6.0.0"
+    },
+    "dependencies": {
+        "@actions/core": "^1.2.0",
+        "@actions/io": "^1.0.0",
+        "@actions/tool-cache": "^1.6.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.23.0"
+    },
+    "scripts": {
+        "lint": "eslint *.js"
+    }
+}
